@@ -1,0 +1,22 @@
+{
+  "name": "paulbresl.in",
+  "description": "tbd",
+  "main": "index.js",
+  "authors": [
+    "Paul Breslin <paul.breslin@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/paulbreslin/paulbresl.in",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "typed.js": "typedjs#~1.1.1"
+  }
+}

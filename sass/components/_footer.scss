@@ -22,3 +22,24 @@ footer{
 		color: #D55B8B;
 	}
 }
+
+@media (min-width: 840px) {
+	
+	footer{
+		margin-top: 50px;
+	}
+}
+
+@media (min-width: 1000px) {
+	
+	footer{
+		margin-top: 70px;
+	}
+}
+
+@media (min-width: 1400px) {
+	
+	footer{
+		margin-top: 90px;
+	}
+}
