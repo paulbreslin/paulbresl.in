@@ -33,13 +33,8 @@
 		}
 
 		button{
-			transition: background .2s;
-			background: none;
-			border: 0;
-			text-transform: uppercase;
-			color: #448AFF;
+			@include button;
 			font-size: 14px;
-			border-radius: 2px;
 		}
 	}
 }
@@ -64,13 +59,39 @@
 			margin: 10px;
 			padding: 10px 15px;
 			max-width: 380px;
-			font-size: 15px;
 			line-height: 1.6rem;
-			cursor: pointer;
+			overflow: hidden;
+
+			img{
+				width: 79px;
+				display: inline-block;
+				vertical-align: top;
+				margin: -10px 10px -10px -15px;
+			}
+
+			.text{
+				display: inline-block;
+				vertical-align: top;
+				width: calc(100% - 100px);
+			}
+			
+			button{
+				@include button;
+				padding: 0;
+				font-size: 13px;
+			}
 
 			&:hover{
 				box-shadow: 0 2px 15px rgba(0, 0, 0, 0.30);
 			}
+		}
+
+		.title{
+			display: block;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			width: 100%;
+			overflow: hidden;
 		}
 
 		.date{
@@ -87,8 +108,19 @@
 
 		.rating{
 			display: block;
-			line-height: 1rem;
+			margin-top: -5px;
 			font-size: 12px !important;
+			color: #757575;
+		}
+	}
+
+	.view-all{
+		@include button;
+		transition: color .2s;
+		color: #9E9E9E;
+		font-size: 13px;
+
+		&:hover{
 			color: #757575;
 		}
 	}

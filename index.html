@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="app">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,8 +16,9 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/breslin.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
     </head>
-    <body>
+    <body ng-controller="mainController as main">
 
         <header>
             <div class="content">
@@ -33,7 +34,7 @@
                 <div class="profile-pg"></div>
                 <div class="text">
                     <h2>About</h2>
-                    <p>Hi there! When I'm not shamelessly ripping off Google's <a href="https://www.google.com/design/spec/material-design/introduction.html" target="blank">Material Design</a> you can find me playing pool, eating burgers and coding.</p>
+                    <p>Hi there! When I'm not shamelessly ripping off Google's <a href="https://www.google.com/design/spec/material-design/introduction.html" target="blank">Material Design</a> you can find me playing pool, eating burgers, and coding.</p>
                     <p>I'm currently looking for work in a well-established company so I can pay the rent this month.</p>
                     <button>View CV</button>
                 </div>
@@ -41,61 +42,79 @@
 
             <section class="dynamic">
                 <div class="blog">
-                    <h2>Blog</h2>
+                    <h2>Medium Articles</h2>
                     <ul>
                         <li>
                             Why you should give Yeoman another chance
                             <span class="date">27 Jan 2016</span>
+                            <a href="https://medium.com/@sara_ann_marie/too-sensitive-9752a86a8382#.yulwoaovk" target="blank">
+                                <button>Read</button>
+                            </a>
                         </li>
                         <li>
                             Large-scale CSS architecture
                             <span class="date">14 Nov 2015</span>
+                            <button>Read</button>
                         </li>
                         <li>
                             The making of my site
                             <span class="date">23 Sep 2015</span>
+                            <button>Read</button>
                         </li>
                     </ul>
+                    <button class="view-all">View all</button>
                 </div><!--
 
                 --><div class="bookshelf">
-                    <h2>Bookshelf</h2>
+                    <h2>Goodreads Reviews</h2>
                     <ul>
                         <li>
-                            <span class="title">Coders at work: Reflections on the art of programming</span> 
-                            <span class="author">Peter Sebeil</span>
-                            <span class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </span>
+                            <img src="img/cover.jpg" alt="Coders">
+                            <div class="text">
+                                <span class="title">Coders at work: Reflections on the Craft of programming</span> 
+                                <span class="author">Peter Sebeil</span>
+                                <span class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <button>Read</button>
+                            </div>
                         </li>
                         <li>
-                            <span class="title">Sophie's World</span> 
-                            <span class="author">Jostein Gaarder</span>
-                            <span class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </span>
+                            <img src="img/sophie.jpg" alt="Coders">
+                            <div class="text">
+                                <span class="title">Sophie's World</span> 
+                                <span class="author">Jostein Gaarder</span>
+                                <span class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <button>Read</button>
+                            </div>
                         </li>
-                        <!-- <li>The New Turing Omnibus</li> -->
                         <li>
-                            <span class="title">The Ingenious Gentleman Don Quixote of La Mancha</span>
-                            <span class="author">Miguel de Cervantes</span>
-                            <span class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
+                            <img src="img/quijote.jpg" alt="Coders">
+                            <div class="text">
+                                <span class="title">Don Quixote</span>
+                                <span class="author">Miguel de Cervantes</span>
+                                <span class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <button>Read</button>
+                            </div>
                         </li>
                     </ul>
+                    <button class="view-all">View all</button>
                 </div>
             </section>
 
