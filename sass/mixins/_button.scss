@@ -1,9 +1,13 @@
 @mixin button{
-	transition: background .2s;
+	transition: background .2s, color .2s;
 	background: none;
 	border: 0;
 	text-transform: uppercase;
 	color: #448AFF;
 	border-radius: 2px;
 	letter-spacing: 0.02em;
+
+	&:hover{
+		color: #1976D2;
+	}
 }
