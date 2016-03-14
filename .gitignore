@@ -1,4 +1,5 @@
 .editorconfig
 node_modules/
 css/
+app_bak/
 bower_components/

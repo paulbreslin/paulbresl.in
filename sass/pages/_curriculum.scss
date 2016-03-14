@@ -1,0 +1,21 @@
+.terminal{
+	color: white;
+	font-family: Monospace;
+	padding: 20px;
+	position: absolute;
+	min-height: 100%;
+	box-sizing: border-box;
+
+	&:before,
+	&::before{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		height: 100vh;
+		width: 100vw;
+		background: black;
+		z-index: -5;
+	}
+}

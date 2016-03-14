@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     webserver = require('gulp-webserver'),
     sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('sass', function() {
+gulp.task('build:css', function() {
     gulp.src('./sass/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -14,17 +14,23 @@ gulp.task('sass', function() {
         .pipe(livereload());
 });
 
-gulp.task('sass:watch', function() {
+gulp.task('watch:css', function() {
     livereload.listen();
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['build:css']);
 });
 
 gulp.task('serve', function() {
     gulp.src('.')
         .pipe(webserver({
-            livereload: true,
-            // host: '0.0.0.0',
+            // livereload: true,
+            host: "0.0.0.0"
         }));
 });
 
-gulp.task('default', ['sass', 'sass:watch', 'serve']);
+gulp.task('watch', ['watch:css'], function() {
+});
+
+gulp.task('build', ['build:css'], function() {
+});
+
+gulp.task('default', ['build', 'serve', 'watch']);
