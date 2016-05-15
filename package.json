@@ -2,9 +2,7 @@
   "name": "paulbresl.in",
   "version": "1.0.0",
   "description": "Personal website",
-  "dependencies": {
-    "font-awesome": "^4.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
