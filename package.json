@@ -1,6 +1,7 @@
 {
   "name": "paulbresl.in",
   "version": "1.0.0",
+  "description": "Personal website",
   "dependencies": {
     "font-awesome": "^4.5.0"
   },
