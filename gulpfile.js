@@ -22,8 +22,8 @@ gulp.task('watch:css', function() {
 gulp.task('serve', function() {
     gulp.src('.')
         .pipe(webserver({
-            // livereload: true,
-            host: "0.0.0.0"
+            livereload: true
+            // host: "0.0.0.0"
         }));
 });
 

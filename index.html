@@ -12,7 +12,7 @@
         <!-- Place favicon.ico in the root directory -->
         
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/breslin.css">
     </head>
@@ -33,8 +33,9 @@
                 <div class="text">
                     <h2>About</h2>
                     <p>Hi there! When I'm not shamelessly ripping off Google's <a href="https://www.google.com/design/spec/material-design/introduction.html" target="blank">Material Design</a> you can find me playing pool, eating burgers, and coding.</p>
-                    <p>I'm currently looking for work in a well-established company so I can pay the rent this month.</p>
-                    <button [routerLink]="['Curriculum']">View CV</button>
+                    <a href="/assets/paul_breslin_cv.pdf" target="blank" download="paul_breslin_cv.pdf">
+                        <button>View CV</button>
+                    </a>
                 </div>
             </div>
 
@@ -46,25 +47,17 @@
                         <li>
                             Why you should give Yeoman another chance
                             <span class="date">27 Jan 2016</span>
-                            <a href="https://medium.com/simple-human/embracing-simplicity-cf9ca9fe6a9e#.3n9le0tmz" target="blank">
+                            <a href="https://medium.com/@paulbreslin/why-you-should-give-yeoman-another-chance-f9e3de2872f1#.92pua2fnh" target="blank">
                                 <button>Read</button>
                             </a>
                         </li>
-                        <li>
-                            Badboy image resizing
-                            <span class="date">14 Nov 2015</span>
-                            <button>Read</button>
-                        </li>
-                        <li>
-                            Large sites require a custom framework
-                            <span class="date">23 Sep 2015</span>
-                            <button>Read</button>
-                        </li>
                     </ul>
-                    <button class="view-all">View all</button>
+                    <a href="https://medium.com/@paulbreslin" target="blank">
+                        <button class="view-all">View all</button>
+                    </a>
                 </div><!-- 
                  --><div class="bookshelf">
-                    <h2>Goodreads Reviews</h2>
+                    <h2>Bookshelf</h2>
                     <ul>
                         <li>
                             <img src="img/cover.jpg" alt="Coders">
@@ -112,7 +105,7 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="view-all">View all</button>
+                    <!-- <button class="view-all">View all</button> -->
                 </div>
 
             </section>
@@ -120,9 +113,7 @@
         </main>
 
         <footer> 
-            <a href="https://github.com/paulbreslin/paulbresl.in" target="_blank">
                 <span>Made with <i class="fa fa-heart"></i> in London.</span>
-            </a>
         </footer>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

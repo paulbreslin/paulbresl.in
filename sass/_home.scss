@@ -8,15 +8,6 @@
 		display: none;
 	}
 
-	.profile-pg{
-		height: 300px;
-		margin: -15px -15px 15px;
-		background: url('/img/hike.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: none;
-	}
-
 	.text{
 		line-height: 1.6rem;
 
@@ -69,7 +60,7 @@
 
 			img{
 				transition: all .2s ease-out;
-				width: 79px;
+				width: 80px;
 				display: inline-block;
 				vertical-align: top;
 				margin: -10px 10px -10px -15px;
@@ -110,7 +101,8 @@
 
 		.rating{
 			display: block;
-			margin-top: -5px;
+			margin-top: 25px;
+			margin-bottom: -5px;
 			font-size: 12px !important;
 			color: #757575;
 		}
@@ -128,6 +120,10 @@
 			color: #757575;
 		}
 	}
+}
+
+.bookshelf ul li button{
+	display: none;
 }
 
 @media (min-width: 400px) {
@@ -165,7 +161,7 @@
 		max-width: 800px;
 
 		img{
-			height: 245px;
+			height: 170px;
 			display: inline-block;
 			vertical-align: top;
 		}
@@ -174,7 +170,7 @@
 			box-sizing: border-box;
 			display: inline-block;
 			vertical-align: top;
-			max-width: 570px;
+			max-width: 640px;
 			padding: 5px 25px;
 
 			h2{
